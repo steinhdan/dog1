@@ -1,0 +1,10 @@
+{
+  "name": "dog1",
+  "license": "MIT",
+  "dependencies": {
+    "joystick": "^0.1.2",
+    "mqtt": "^3.0.0",
+    "node-pid-controller": "^1.0.1",
+    "serialport": "^7.1.5"
+  }
+}

@@ -1,0 +1,18 @@
+[Unit]
+Description=Job that runs the Dog1 controller
+
+[Service]
+WorkingDirectory=/home/pi/dev/dog1/
+ExecStart=/usr/bin/node /home/pi/dev/dog1/dog1.js
+Restart=always
+RestartSec=3
+StandardOutput=syslog
+StandardError=syslog
+SyslogIdentifier=dog1
+User=pi
+Group=pi
+Environment=NODE_ENV=production
+
+[Install]
+WantedBy=multi-user.target
+
